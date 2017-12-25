@@ -1,0 +1,107 @@
+@import 'base.less';
+
+html , body {
+    height: 100%;
+}
+#topbar {
+    position: absolute;
+    width: 100%;
+    background-color: #ccc;
+    .icon-back {
+        position: absolute;
+        left: 0;
+        top: 0;
+        // display: block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-image: url('../images/sprites.png');
+        background-size: 200px 200px;
+        background-position: -20px 0;
+        background-clip: content-box ;
+        background-origin: content-box;
+    }
+    form {
+        margin:0 40px;
+        padding: 5px 0;
+        input {
+            width: 100%;
+            height: 30px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    }
+    .icon-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        // display: block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-image: url('../images/sprites.png');
+        background-size: 200px 200px;
+        background-position: -60px 0;
+        background-clip: content-box ;
+        background-origin: content-box;
+    }
+}
+#category {
+    padding-top: 40px;
+    height: 100%;
+    background-color: #eee;
+    .category-left {
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        border-right: 1px solid #ddd;
+        > ul {
+           > li {
+                padding: 10px 20px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+    .category-right {
+        position: relative;
+        left: 0;
+        top: 0px;
+        height: 100%;
+        overflow: hidden;
+        margin-left: 104px;
+        background-color: #fff;
+        .product-list {
+            padding: 10px;
+            > a {
+                margin-bottom: 5px;
+                display: block;
+                > img {
+                    width: 100%;
+                }
+            }
+            .product {
+                > h4 {
+                    font-size: 16px;
+                } 
+                > ul {
+                    > li {
+                        float: left;
+                        padding: 10px;
+                        width: 33.33%;
+                        > a {
+                            > img {
+                                width: 100%;
+                            }
+                            > p {
+                                text-align: center;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

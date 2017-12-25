@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    	margin: 0px;
+    	padding: 0px;
+    }
+    body{
+    	width: 320px;
+    }
+    img:first-child {
+        width: 80px;
+        height: 80px;
+    }
+    
+    img:last-of-type {
+        width: 40px;
+        height: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 移动端的分辨率和真实像素 -->
+    <!-- 通常分辨率会比真实的像素要大2倍 -->
+
+    <!-- 页面按照真实宽度高度写的 页面要在分辨率里面显示时候会放大2倍
+    图片放大了2倍就会失真
+    文字之类或者矢量图不会失真 -->
+
+    <!-- 一般图片设计按照分辨率来设计图片 在页面上使用图片的时候要按照图片的1半来设置
+    比如图片是80*80 就设置样式就是40px*40px
+    背景图 设置背景图的大小  background-size:40px 40px; -->
+
+    <!-- 如果将来遇到更高分辨率的设备需要兼容
+    比如项目需要兼容iphonex  设计师会给你设计3倍图 使用要缩小3倍来写
+    比如导航图的宽度90*90  写30*30
+    在比如要兼容三星note 有一些是4倍分辨率（分辨率比真实像素大4倍） 会设计4倍图 
+    比如导航 120*120 写 30*30
+    因为图片缩小是不会设置 -->
+    <img src="images/nav0.png" alt="">
+    <img src="images/nav0.png" alt="">
+</body>
+
+</html>
